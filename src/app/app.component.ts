@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
       const diff = now - lastCheckTime;
 
       if (diff > 100) {
-        this.blockMsg = `The Event Loop was blocked for ${diff} ms`;
+        this.blockMsg = `The Event Loop was blocked for ${diff} ms :-(`;
       }
 
       lastCheckTime = now;
