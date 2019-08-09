@@ -57,7 +57,9 @@ export class AppComponent implements OnInit {
   }
 
   public createNewStuff(): void {
+    console.time('createNewStuff');
     this.generateData();
+    console.timeEnd('createNewStuff');
   }
 
 }
